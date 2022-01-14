@@ -13,8 +13,11 @@ namespace RednilianUtlilitiesNC
     /// <para>ErrorMessage = string.Empty;</para>
     /// <para>IntValue = -1;</para>
     /// <para>BoolResult = false;</para>
-    /// <para>ObjectResult = null;</para>
+    /// <para>GuidListResult = new();</para>
+    /// <para>ObjectResult = new();</para>
+    /// <para>ObjectListResult = new();</para>
     /// <para>StringList = new;</para>
+    /// <para>StringResult = string.Empty;</para>
     /// </code>
     /// </summary>
     public class AdvancedReturnType
@@ -22,7 +25,7 @@ namespace RednilianUtlilitiesNC
         public AdvancedReturnType()
         {
             ErrorMessage = string.Empty;
-            IntValue = -1;
+            IntResult = -1;
             BoolResult = false;
             GuidListResult = new();
             ObjectResult = new();
@@ -33,7 +36,7 @@ namespace RednilianUtlilitiesNC
 
         public string ErrorMessage { get; set; }
         public List<Guid> GuidListResult { get; set; }
-        public int IntValue { get; set; }
+        public int IntResult { get; set; }
         public bool BoolResult { get; set; }
         public Object ObjectResult { get; set; }
         public List<Object> ObjectListResult { get; set; }
